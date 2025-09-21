@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 import Animated, { Layout, FadeIn, FadeOut } from 'react-native-reanimated';
 import { useDispatch } from 'react-redux';
 import { toggleTodo, deleteTodo } from '../redux/todosSlice';
@@ -8,7 +8,7 @@ import { Todo } from '../types/todos';
 
 interface TodoItemProps extends Todo {}
 
-export const TodoItem: React.FC<TodoItemProps> = ({ id, text, completed, date }) => {
+export const TodoItem: React.FC<TodoItemProps> = ({ id, text, completed, date: _date }) => {
    const dispatch = useDispatch();
 
    return (

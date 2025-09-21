@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ScrollView, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import { AddTodo } from '../components/AddTodo';
 import { CalendarView } from '../components/CalendarView';
 
