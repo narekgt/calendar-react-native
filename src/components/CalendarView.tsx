@@ -10,8 +10,8 @@ export const CalendarView: React.FC = () => {
    const todos = useSelector((state: RootState) => state.todos.todos);
    const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
 
-   const filteredDate = todos.filter(todo => todo.date === selectedDate);
-
+   const filteredTodos = todos.filter(todo => todo.date === selectedDate);
+   
    return (
       <View style={styles.container}>
         <Calendar
